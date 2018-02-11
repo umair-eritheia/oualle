@@ -1,0 +1,2 @@
+module Hotels::BaseHelper
+end

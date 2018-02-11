@@ -1,0 +1,2 @@
+module Cars::BaseHelper
+end
