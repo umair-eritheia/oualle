@@ -27,4 +27,4 @@ tmp/
 .DS_Store
 
 database.yml
-config/database.yml
+config/database.ymlconfig/database.yml
