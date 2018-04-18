@@ -897,7 +897,7 @@ label.label-focus {
     transform: translate3d(0, 0, 0);
   }
 }
-@-ms-keyframes label-anim {
+@-o-keyframes label-anim {
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -4854,7 +4854,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: alpha(opacity=0);
   }
 }
-@-ms-keyframes flash {
+@-o-keyframes flash {
   0%, 50%, 100% {
     opacity: 1;
     -ms-filter: none;
@@ -4955,7 +4955,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateX(10%);
   }
 }
-@-ms-keyframes shake {
+@-o-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -5080,7 +5080,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateY(-15%);
   }
 }
-@-ms-keyframes bounce {
+@-o-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -5253,7 +5253,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: scale(1) rotate(0);
   }
 }
-@-ms-keyframes tada {
+@-o-keyframes tada {
   0% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -5482,7 +5482,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: rotate(0deg);
   }
 }
-@-ms-keyframes swing {
+@-o-keyframes swing {
   20%, 40%, 60%, 80%, 100% {
     -webkit-transform-origin: top center;
     -moz-transform-origin: top center;
@@ -5751,7 +5751,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateX(0%);
   }
 }
-@-ms-keyframes wobble {
+@-o-keyframes wobble {
   0% {
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
@@ -5940,7 +5940,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: scale(1);
   }
 }
-@-ms-keyframes pulse {
+@-o-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -6068,7 +6068,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes left-to-right {
+@-o-keyframes left-to-right {
   49% {
     -webkit-transform: translate(100%);
     -moz-transform: translate(100%);
@@ -6198,7 +6198,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes right-to-left {
+@-o-keyframes right-to-left {
   49% {
     -webkit-transform: translate(-100%);
     -moz-transform: translate(-100%);
@@ -6328,7 +6328,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes bottom-to-top {
+@-o-keyframes bottom-to-top {
   49% {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -6458,7 +6458,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes top-to-bottom {
+@-o-keyframes top-to-bottom {
   49% {
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
@@ -8772,7 +8772,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: rotate(360deg);
   }
 }
-@-ms-keyframes spinner {
+@-o-keyframes spinner {
   0% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -9205,7 +9205,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes empty {
+@-o-keyframes empty {
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -9258,7 +9258,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: none;
   }
 }
-@-ms-keyframes fadeIn {
+@-o-keyframes fadeIn {
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -9323,7 +9323,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     filter: alpha(opacity=0);
   }
 }
-@-ms-keyframes fadeOut {
+@-o-keyframes fadeOut {
   0% {
     opacity: 1;
     -ms-filter: none;
@@ -9451,7 +9451,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateZ(-500px) translateX(-200%);
   }
 }
-@-ms-keyframes backSlideOut {
+@-o-keyframes backSlideOut {
   25% {
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -9621,7 +9621,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateZ(0) translateX(0);
   }
 }
-@-ms-keyframes backSlideIn {
+@-o-keyframes backSlideIn {
   0%, 25% {
     opacity: 0.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -9725,7 +9725,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: scale(0.8);
   }
 }
-@-ms-keyframes scaleToFade {
+@-o-keyframes scaleToFade {
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -9776,7 +9776,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: translateY(-100%);
   }
 }
-@-ms-keyframes goDown {
+@-o-keyframes goDown {
   0% {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
@@ -9830,7 +9830,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: scale(1.5);
   }
 }
-@-ms-keyframes scaleUpFrom {
+@-o-keyframes scaleUpFrom {
   0% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -9890,7 +9890,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     transform: scale(1.5);
   }
 }
-@-ms-keyframes scaleUpTo {
+@-o-keyframes scaleUpTo {
   100% {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -10795,7 +10795,9 @@ img.mfp-img {
   font-weight: normal;
 }
 .comment .comment-reply {
-  [class^="fa fa-"]: 13px;
+  [class^="fa fa-"] {
+    margin-top: 13px;
+  }
 }
 .comment:hover .comment-like {
   opacity: 1;
