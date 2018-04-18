@@ -1,2 +1,713 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.erb
+.top-area.show-onload
+  .bg-holder.full
+    .bg-front.bg-front-mob-rel
+      .container
+        .search-tabs.search-tabs-bg.search-tabs-abs.mt50
+          %h1 Find Your Perfect Trip
+          .tabbable
+            %ul#myTab.nav.nav-tabs
+              %li.active
+                %a{"data-toggle" => "tab", :href => "#tab-1"}
+                  %i.fa.fa-building-o
+                  %span Hotels
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab-2"}
+                  %i.fa.fa-plane
+                  %span Flights
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab-3"}
+                  %i.fa.fa-home
+                  %span Rentals
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab-4"}
+                  %i.fa.fa-car
+                  %span Cars
+              %li
+                %a{"data-toggle" => "tab", :href => "#tab-5"}
+                  %i.fa.fa-bolt
+                  %span Activities
+            .tab-content
+              #tab-1.tab-pane.fade.in.active
+                %h2 Search and Save on Hotels
+                %form
+                  .form-group.form-group-lg.form-group-icon-left
+                    %i.fa.fa-map-marker.input-icon
+                    %label Where are you going?
+                    %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+                  .input-daterange{"data-date-format" => "M d, D"}
+                    .row
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Check-in
+                          %input.form-control{:name => "start", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Check-out
+                          %input.form-control{:name => "end", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-select-plus
+                          %label Rooms
+                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                            %label.btn.btn-primary.active
+                              %input{:name => "options", :type => "radio"}>/
+                              1
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              2
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3+
+                          %select.form-control.hidden
+                            %option 1
+                            %option 2
+                            %option 3
+                            %option{:selected => "selected"} 4
+                            %option 5
+                            %option 6
+                            %option 7
+                            %option 8
+                            %option 9
+                            %option 10
+                            %option 11
+                            %option 12
+                            %option 13
+                            %option 14
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-select-plus
+                          %label Guests
+                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                            %label.btn.btn-primary.active
+                              %input{:name => "options", :type => "radio"}>/
+                              1
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              2
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3+
+                          %select.form-control.hidden
+                            %option 1
+                            %option 2
+                            %option 3
+                            %option{:selected => "selected"} 4
+                            %option 5
+                            %option 6
+                            %option 7
+                            %option 8
+                            %option 9
+                            %option 10
+                            %option 11
+                            %option 12
+                            %option 13
+                            %option 14
+                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Hotels
+              #tab-2.tab-pane.fade
+                %h2 Search for Cheap Flights
+                %form
+                  .tabbable
+                    %ul#flightChooseTab.nav.nav-pills.nav-sm.nav-no-br.mb10
+                      %li.active
+                        %a{"data-toggle" => "tab", :href => "#flight-search-1"} Round Trip
+                      %li
+                        %a{"data-toggle" => "tab", :href => "#flight-search-2"} One Way
+                    .tab-content
+                      #flight-search-1.tab-pane.fade.in.active
+                        .row
+                          .col-md-6
+                            .form-group.form-group-lg.form-group-icon-left
+                              %i.fa.fa-map-marker.input-icon
+                              %label From
+                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                          .col-md-6
+                            .form-group.form-group-lg.form-group-icon-left
+                              %i.fa.fa-map-marker.input-icon
+                              %label To
+                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                        .input-daterange{"data-date-format" => "M d, D"}
+                          .row
+                            .col-md-3
+                              .form-group.form-group-lg.form-group-icon-left
+                                %i.fa.fa-calendar.input-icon.input-icon-highlight
+                                %label Departing
+                                %input.form-control{:name => "start", :type => "text"}/
+                            .col-md-3
+                              .form-group.form-group-lg.form-group-icon-left
+                                %i.fa.fa-calendar.input-icon.input-icon-highlight
+                                %label Returning
+                                %input.form-control{:name => "end", :type => "text"}/
+                            .col-md-6
+                              .form-group.form-group-lg.form-group-select-plus
+                                %label Passngers
+                                .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                                  %label.btn.btn-primary.active
+                                    %input{:name => "options", :type => "radio"}>/
+                                    1
+                                  %label.btn.btn-primary
+                                    %input{:name => "options", :type => "radio"}>/
+                                    2
+                                  %label.btn.btn-primary
+                                    %input{:name => "options", :type => "radio"}>/
+                                    3
+                                  %label.btn.btn-primary
+                                    %input{:name => "options", :type => "radio"}>/
+                                    3+
+                                %select.form-control.hidden
+                                  %option 1
+                                  %option 2
+                                  %option 3
+                                  %option{:selected => "selected"} 4
+                                  %option 5
+                                  %option 6
+                                  %option 7
+                                  %option 8
+                                  %option 9
+                                  %option 10
+                                  %option 11
+                                  %option 12
+                                  %option 13
+                                  %option 14
+                      #flight-search-2.tab-pane.fade
+                        .row
+                          .col-md-6
+                            .form-group.form-group-lg.form-group-icon-left
+                              %i.fa.fa-map-marker.input-icon
+                              %label From
+                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                          .col-md-6
+                            .form-group.form-group-lg.form-group-icon-left
+                              %i.fa.fa-map-marker.input-icon
+                              %label To
+                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                        .row
+                          .col-md-3
+                            .form-group.form-group-lg.form-group-icon-left
+                              %i.fa.fa-calendar.input-icon.input-icon-highlight
+                              %label Departing
+                              %input.date-pick.form-control{"data-date-format" => "M d, D", :type => "text"}/
+                          .col-md-6
+                            .form-group.form-group-lg.form-group-select-plus
+                              %label Passngers
+                              .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                                %label.btn.btn-primary.active
+                                  %input{:name => "options", :type => "radio"}>/
+                                  1
+                                %label.btn.btn-primary
+                                  %input{:name => "options", :type => "radio"}>/
+                                  2
+                                %label.btn.btn-primary
+                                  %input{:name => "options", :type => "radio"}>/
+                                  3
+                                %label.btn.btn-primary
+                                  %input{:name => "options", :type => "radio"}>/
+                                  3+
+                              %select.form-control.hidden
+                                %option 1
+                                %option 2
+                                %option 3
+                                %option{:selected => "selected"} 4
+                                %option 5
+                                %option 6
+                                %option 7
+                                %option 8
+                                %option 9
+                                %option 10
+                                %option 11
+                                %option 12
+                                %option 13
+                                %option 14
+                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Flights
+              #tab-3.tab-pane.fade
+                %h2 Find Your Perfect Home
+                %form
+                  .form-group.form-group-lg.form-group-icon-left
+                    %i.fa.fa-map-marker.input-icon
+                    %label Where are you going?
+                    %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+                  .input-daterange{"data-date-format" => "M d, D"}
+                    .row
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Check-in
+                          %input.form-control{:name => "start", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Check-out
+                          %input.form-control{:name => "end", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-select-plus
+                          %label Rooms
+                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                            %label.btn.btn-primary.active
+                              %input{:name => "options", :type => "radio"}>/
+                              1
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              2
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3+
+                          %select.form-control.hidden
+                            %option 1
+                            %option 2
+                            %option 3
+                            %option{:selected => "selected"} 4
+                            %option 5
+                            %option 6
+                            %option 7
+                            %option 8
+                            %option 9
+                            %option 10
+                            %option 11
+                            %option 12
+                            %option 13
+                            %option 14
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-select-plus
+                          %label Guests
+                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+                            %label.btn.btn-primary.active
+                              %input{:name => "options", :type => "radio"}>/
+                              1
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              2
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3
+                            %label.btn.btn-primary
+                              %input{:name => "options", :type => "radio"}>/
+                              3+
+                          %select.form-control.hidden
+                            %option 1
+                            %option 2
+                            %option 3
+                            %option{:selected => "selected"} 4
+                            %option 5
+                            %option 6
+                            %option 7
+                            %option 8
+                            %option 9
+                            %option 10
+                            %option 11
+                            %option 12
+                            %option 13
+                            %option 14
+                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Vacation Rentals
+              #tab-4.tab-pane.fade
+                %h2 Search for Cheap Rental Cars
+                %form
+                  .row
+                    .col-md-6
+                      .form-group.form-group-lg.form-group-icon-left
+                        %i.fa.fa-map-marker.input-icon
+                        %label Pick-up Location
+                        %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                    .col-md-6
+                      .form-group.form-group-lg.form-group-icon-left
+                        %i.fa.fa-map-marker.input-icon
+                        %label Drop-off Location
+                        %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+                  .input-daterange{"data-date-format" => "M d, D"}
+                    .row
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Pick-up Date
+                          %input.form-control{:name => "start", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-clock-o.input-icon.input-icon-highlight
+                          %label Pick-up Time
+                          %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label Drop-off Date
+                          %input.form-control{:name => "end", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-clock-o.input-icon.input-icon-highlight
+                          %label Drop-off Time
+                          %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
+                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Rental Cars
+              #tab-5.tab-pane.fade
+                %h2 Search for Activities
+                %form
+                  .input-daterange{"data-date-format" => "M d, D"}
+                    .row
+                      .col-md-6
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-map-marker.input-icon
+                          %label Where are you going?
+                          %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label From
+                          %input.form-control{:name => "start", :type => "text"}/
+                      .col-md-3
+                        .form-group.form-group-lg.form-group-icon-left
+                          %i.fa.fa-calendar.input-icon.input-icon-highlight
+                          %label To
+                          %input.form-control{:name => "end", :type => "text"}/
+                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Activities
+    #owl-carousel-slider.owl-carousel.owl-slider.owl-carousel-area.visible-lg
+      .bg-holder.full
+        .bg-mask
+        .bg-blur{:style => "background-image:url(img/2048x1365.png);"}
+        .bg-content
+          .container
+            .loc-info.text-right.hidden-xs.hidden-sm
+              %h3.loc-info-title
+                %img{:alt => "Image Alternative text", :src => "img/flags/32/fr.png", :title => "Image Title"}>/
+                Paris
+              %p.loc-info-weather
+                %span.loc-info-weather-num +25
+                %i.im.im-cloudy.loc-info-weather-icon
+              %ul.loc-info-list
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-building-o
+                    125 Hotels from $42/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-home
+                    270 Rentals from $60/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-car
+                    109 Car Offers from $34/day
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-bolt
+                    195 Activities this Week
+              %a.btn.btn-white.btn-ghost.mt10{:href => "#"}
+                %i.fa.fa-angle-right
+                Explore
+      .bg-holder.full
+        .bg-mask
+        .bg-blur{:style => "background-image:url(img/2048x2048.png);"}
+        .bg-content
+          .container
+            .loc-info.text-right.hidden-xs.hidden-sm
+              %h3.loc-info-title
+                %img{:alt => "Image Alternative text", :src => "img/flags/32/hu.png", :title => "Image Title"}>/
+                Budapest
+              %p.loc-info-weather
+                %span.loc-info-weather-num +31
+                %i.im.im-cloudy.loc-info-weather-icon
+              %ul.loc-info-list
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-building-o
+                    256 Hotels from $49/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-home
+                    190 Rentals from $58/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-car
+                    193 Car Offers from $52/day
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-bolt
+                    170 Activities this Week
+              %a.btn.btn-white.btn-ghost.mt10{:href => "#"}
+                %i.fa.fa-angle-right
+                Explore
+      .bg-holder.full
+        .bg-mask
+        .bg-blur{:style => "background-image:url(img/2048x1365.png);"}
+        .bg-content
+          .container
+            .loc-info.text-right.hidden-xs.hidden-sm
+              %h3.loc-info-title
+                %img{:alt => "Image Alternative text", :src => "img/flags/32/us.png", :title => "Image Title"}>/
+                Las Vegas
+              %p.loc-info-weather
+                %span.loc-info-weather-num +34
+                %i.im.im-rain.loc-info-weather-icon
+              %ul.loc-info-list
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-building-o
+                    206 Hotels from $53/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-home
+                    281 Rentals from $54/night
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-car
+                    290 Car Offers from $31/day
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-bolt
+                    160 Activities this Week
+              %a.btn.btn-white.btn-ghost.mt10{:href => "#"}
+                %i.fa.fa-angle-right
+                Explore
+    .bg-img.hidden-lg{:style => "background-image:url(img/2048x1365.png);"}
+    .bg-mask.hidden-lg
+/ END TOP AREA
+.gap
+.container
+  .row
+    .col-md-10.col-md-offset-1
+      .row.row-wrap{"data-gutter" => "120"}
+        .col-md-6
+          .mb30.thumb
+            %i.fa.fa-dollar.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
+            .thumb-caption
+              %h4.thumb-title Best Price Guarantee
+              %p.thumb-desc Habitant pulvinar nostra himenaeos pulvinar facilisi dui tincidunt luctus condimentum porttitor eros metus quisque scelerisque sollicitudin habitant
+        .col-md-6
+          .mb30.thumb
+            %i.fa.fa-briefcase.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
+            .thumb-caption
+              %h4.thumb-title Combine &amp; Save
+              %p.thumb-desc Hendrerit pretium magna ultricies massa dignissim mi praesent et justo sed platea est cras penatibus fermentum neque
+        .col-md-6
+          .mb30.thumb
+            %i.fa.fa-send.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
+            .thumb-caption
+              %h4.thumb-title Best Destinations
+              %p.thumb-desc Morbi vel nec sed imperdiet accumsan ultricies aliquet suspendisse placerat feugiat tellus platea fermentum eros in commodo
+        .col-md-6
+          .mb30.thumb
+            %i.fa.fa-thumbs-o-up.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
+            .thumb-caption
+              %h4.thumb-title Best Travel Agent
+              %p.thumb-desc Quisque porta dolor scelerisque gravida commodo in accumsan ullamcorper laoreet nam litora senectus diam sapien hac turpis
+.bg-holder
+  .bg-mask
+  .bg-blur{:style => "background-image:url(img/1280x848.png);"}
+  .bg-content
+    .container
+      .gap
+      %h1.text-center.text-white.mb20 Recent Reviews
+      .row.row-wrap
+        .col-md-4
+          / START TESTIMONIAL
+          .testimonial.text-white
+            .testimonial-inner
+              %blockquote
+                %p Eget penatibus hac tortor imperdiet ante elementum tellus vel habitant in laoreet aenean sapien penatibus
+            .testimonial-author
+              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Sevenly Shirts - June 2012  2"}/
+              %p.testimonial-author-name Alison Mackenzie
+              %cite
+                on
+                %a.text-udl{:href => "#"} Waldorf Astoria
+                hotel in New York
+          / END TESTIMONIAL
+        .col-md-4
+          / START TESTIMONIAL
+          .testimonial.text-white
+            .testimonial-inner
+              %blockquote
+                %p Netus cum ornare massa blandit natoque dui volutpat lacus non volutpat enim praesent lobortis semper
+            .testimonial-author
+              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Flare lens flare"}/
+              %p.testimonial-author-name Cheryl Gustin
+              %cite
+                on
+                %a.text-udl{:href => "#"} Wellington
+                hotel in New York
+          / END TESTIMONIAL
+        .col-md-4
+          / START TESTIMONIAL
+          .testimonial.text-white
+            .testimonial-inner
+              %blockquote
+                %p Aliquam vulputate velit penatibus elit gravida neque mollis purus vivamus habitasse iaculis nullam cras consectetur
+            .testimonial-author
+              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Afro"}/
+              %p.testimonial-author-name Sarah Slater
+              %cite
+                on
+                %a.text-udl{:href => "#"} Holiday
+                hotel in New York
+          / END TESTIMONIAL
+      .gap-small.gap
+.container
+  .gap
+  %h1.text-center.mb20 Last Minute Deals
+  .row.row-wrap
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY SERRA GOLF library"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star-half-empty
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} The Benjamin
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              New York, NY (Chelsea)
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $394
+            %small avg/night
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY RIO INTERNACIONAL de luxe"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} The London NYC
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              New York, NY (Chelsea)
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $355
+            %small avg/night
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel 1"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star-half-empty
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} InterContinental New York Barclay
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              Ozone Park, NY (Kennedy Airport (JFK))
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $213
+            %small avg/night
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY SERRA GOLF suite2"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star-o
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} Affinia Shelburne
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              Brooklyn, NY (Brooklyn)
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $238
+            %small avg/night
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel 2"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star-half-empty
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} New York Hilton Midtown
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              New York, NY (Midtown East)
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $438
+            %small avg/night
+    .col-md-4
+      .thumb
+        %header.thumb-header
+          %a.hover-img{:href => "#"}
+            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel THE CLIFF BAY spa suite"}/
+            %h5.hover-title-center Book Now
+        .thumb-caption
+          %ul.icon-group.text-tiny.text-color
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star
+            %li
+              %i.fa.fa-star-half-empty
+          %h5.thumb-title
+            %a.text-darken{:href => "#"} Wellington Hotel
+          %p.mb0
+            %small
+              %i.fa.fa-map-marker
+              New York, NY (Downtown - Wall Street)
+          %p.mb0.text-darken
+            %span.text-lg.lh1em.text-color $210
+            %small avg/night
+  .gap.gap-small
