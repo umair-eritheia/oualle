@@ -367,12 +367,12 @@
     #owl-carousel-slider.owl-carousel.owl-slider.owl-carousel-area.visible-lg
       .bg-holder.full
         .bg-mask
-        .bg-blur{:style => "background-image:url(img/2048x1365.png);"}
+        .bg-blur{:style => "background-image:url(#{image_path '2048x1365.png'});"}
         .bg-content
           .container
             .loc-info.text-right.hidden-xs.hidden-sm
               %h3.loc-info-title
-                %img{:alt => "Image Alternative text", :src => "img/flags/32/fr.png", :title => "Image Title"}>/
+                = image_tag "flags/32/fr.png"
                 Paris
               %p.loc-info-weather
                 %span.loc-info-weather-num +25
@@ -399,12 +399,12 @@
                 Explore
       .bg-holder.full
         .bg-mask
-        .bg-blur{:style => "background-image:url(img/2048x2048.png);"}
+        .bg-blur{:style => "background-image:url(#{image_path '2048x2048.png'});"}
         .bg-content
           .container
             .loc-info.text-right.hidden-xs.hidden-sm
               %h3.loc-info-title
-                %img{:alt => "Image Alternative text", :src => "img/flags/32/hu.png", :title => "Image Title"}>/
+                = image_tag "flags/32/hu.png"
                 Budapest
               %p.loc-info-weather
                 %span.loc-info-weather-num +31
@@ -431,12 +431,12 @@
                 Explore
       .bg-holder.full
         .bg-mask
-        .bg-blur{:style => "background-image:url(img/2048x1365.png);"}
+        .bg-blur{:style => "background-image:url(#{image_path '2048x1365.png'});"}
         .bg-content
           .container
             .loc-info.text-right.hidden-xs.hidden-sm
               %h3.loc-info-title
-                %img{:alt => "Image Alternative text", :src => "img/flags/32/us.png", :title => "Image Title"}>/
+                = image_tag "flags/32/us.png"
                 Las Vegas
               %p.loc-info-weather
                 %span.loc-info-weather-num +34
@@ -461,7 +461,7 @@
               %a.btn.btn-white.btn-ghost.mt10{:href => "#"}
                 %i.fa.fa-angle-right
                 Explore
-    .bg-img.hidden-lg{:style => "background-image:url(img/2048x1365.png);"}
+    .bg-img.hidden-lg{:style => "background-image:url(#{image_path '2048x1365.png'});"}
     .bg-mask.hidden-lg
 / END TOP AREA
 .gap
@@ -495,7 +495,7 @@
               %p.thumb-desc Quisque porta dolor scelerisque gravida commodo in accumsan ullamcorper laoreet nam litora senectus diam sapien hac turpis
 .bg-holder
   .bg-mask
-  .bg-blur{:style => "background-image:url(img/1280x848.png);"}
+  .bg-blur{:style => "background-image:url(#{image_path '1280x848.png'});"}
   .bg-content
     .container
       .gap
@@ -508,7 +508,7 @@
               %blockquote
                 %p Eget penatibus hac tortor imperdiet ante elementum tellus vel habitant in laoreet aenean sapien penatibus
             .testimonial-author
-              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Sevenly Shirts - June 2012  2"}/
+              = image_tag "50x50.png"
               %p.testimonial-author-name Alison Mackenzie
               %cite
                 on
@@ -522,7 +522,7 @@
               %blockquote
                 %p Netus cum ornare massa blandit natoque dui volutpat lacus non volutpat enim praesent lobortis semper
             .testimonial-author
-              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Flare lens flare"}/
+              = image_tag "50x50.png"
               %p.testimonial-author-name Cheryl Gustin
               %cite
                 on
@@ -536,7 +536,7 @@
               %blockquote
                 %p Aliquam vulputate velit penatibus elit gravida neque mollis purus vivamus habitasse iaculis nullam cras consectetur
             .testimonial-author
-              %img{:alt => "Image Alternative text", :src => "img/50x50.png", :title => "Afro"}/
+              = image_tag "50x50.png"
               %p.testimonial-author-name Sarah Slater
               %cite
                 on
@@ -552,7 +552,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY SERRA GOLF library"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color
@@ -579,7 +579,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY RIO INTERNACIONAL de luxe"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color
@@ -606,7 +606,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel 1"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color
@@ -633,7 +633,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel PORTO BAY SERRA GOLF suite2"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color
@@ -660,7 +660,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel 2"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color
@@ -687,7 +687,7 @@
       .thumb
         %header.thumb-header
           %a.hover-img{:href => "#"}
-            %img{:alt => "Image Alternative text", :src => "img/800x600.png", :title => "hotel THE CLIFF BAY spa suite"}/
+            = image_tag "800x600.png"
             %h5.hover-title-center Book Now
         .thumb-caption
           %ul.icon-group.text-tiny.text-color

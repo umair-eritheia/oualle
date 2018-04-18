@@ -10,6 +10,7 @@
     %meta{:content => "Traveler - Premium template for travel companies", :name => "description"}/
     %meta{:content => "Tsoy", :name => "author"}/
 
+    / %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %title= content_for?(:title) ? yield(:title) : "Oualle"
     = csrf_meta_tags
     = stylesheet_link_tag "application", :media => "all"
@@ -25,6 +26,7 @@
     / For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:
     / Size should be 57 x 57 pixels
     = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+
     / For all other devices
     / Size should be 32 x 32 pixels
     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
@@ -34,6 +36,6 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
   %body
     .global-wrap
-      = render partial: 'home/header'
+      = render partial: 'shared/header'
       = yield
-      = render partial: 'home/footer'
+      = render partial: 'shared/footer'

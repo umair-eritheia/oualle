@@ -1,0 +1,389 @@
+%header#main-header
+  .header-top
+    .container
+      .row
+        .col-md-3
+          %a.logo{:href => "index.html"}
+            = image_tag "logo-invert.png"
+            / %img{:alt => "Image Alternative text", :src => "img/logo-invert.png", :title => "Image Title"}/
+        .col-md-3.col-md-offset-2
+          %form.main-header-search
+            .form-group.form-group-icon-left
+              %i.fa.fa-search.input-icon
+              %input.form-control{:type => "text"}/
+        .col-md-4
+          .top-user-area.clearfix
+            %ul.top-user-area-list.list.list-horizontal.list-border
+              %li.top-user-area-avatar
+                %a{:href => "user-profile.html"}
+                  = image_tag "40x40.png", class: 'origin round'
+                  / %img.origin.round{:alt => "Image Alternative text", :src => "40x40.png", :title => "AMaze"}>/
+                  Hi, John
+              %li
+                %a{:href => "#"} Sign Out
+              %li.nav-drop
+                %a{:href => "#"}
+                  USD $
+                  %i.fa.fa-angle-down
+                  %i.fa.fa-angle-up
+                %ul.list.nav-drop-menu
+                  %li
+                    %a{:href => "#"}
+                      EUR
+                      %span.right €
+                  %li
+                    %a{:href => "#"}
+                      GBP
+                      %span.right £
+                  %li
+                    %a{:href => "#"}
+                      JPY
+                      %span.right 円
+                  %li
+                    %a{:href => "#"}
+                      CAD
+                      %span.right $
+                  %li
+                    %a{:href => "#"}
+                      AUD
+                      %span.right A$
+              %li.top-user-area-lang.nav-drop
+                %a{:href => "#"}
+                  = image_tag "flags/32/uk.png"
+                  / %img{:alt => "Image Alternative text", :src => "flags/32/uk.png", :title => "Image Title"}>/
+                  ENG
+                  %i.fa.fa-angle-down
+                  %i.fa.fa-angle-up
+                %ul.list.nav-drop-menu
+                  %li
+                    %a{:href => "#", :title => "German"}
+                      = image_tag "flags/32/de.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/de.png", :title => "Image Title"}/
+                      %span.right GER
+                  %li
+                    %a{:href => "#", :title => "Japanise"}
+                      = image_tag "flags/32/jp.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/jp.png", :title => "Image Title"}/
+                      %span.right JAP
+                  %li
+                    %a{:href => "#", :title => "Italian"}
+                      = image_tag "flags/32/it.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/it.png", :title => "Image Title"}/
+                      %span.right ITA
+                  %li
+                    %a{:href => "#", :title => "French"}
+                      = image_tag "flags/32/fr.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/fr.png", :title => "Image Title"}/
+                      %span.right FRE
+                  %li
+                    %a{:href => "#", :title => "Russian"}
+                      = image_tag "flags/32/ru.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/ru.png", :title => "Image Title"}/
+                      %span.right RUS
+                  %li
+                    %a{:href => "#", :title => "Korean"}
+                      = image_tag "flags/32/kr.png"
+                      / %img{:alt => "Image Alternative text", :src => "flags/32/kr.png", :title => "Image Title"}/
+                      %span.right KOR
+  .container
+    .nav
+      %ul#slimmenu.slimmenu
+        %li.active
+          %a{:href => "index.html"} Home
+          %ul
+            %li
+              %a{:href => "index.html"} Default
+            %li
+              %a{:href => "index-1.html"} Layout 1
+            %li
+              %a{:href => "index-2.html"} Layout 2
+            %li.active
+              %a{:href => "index-3.html"} Layout 3
+            %li
+              %a{:href => "index-4.html"} Layout 4
+            %li
+              %a{:href => "index-5.html"} Layout 5
+            %li
+              %a{:href => "index-6.html"} Layout 6
+            %li
+              %a{:href => "index-7.html"} Layout 7
+        %li
+          %a{:href => "success-payment.html"} Pages
+          %ul
+            %li
+              %a{:href => "success-payment.html"} Success Payment
+            %li
+              %a{:href => "user-profile.html"} User Profile
+              %ul
+                %li
+                  %a{:href => "user-profile.html"} Overview
+                %li
+                  %a{:href => "user-profile-settings.html"} Settings
+                %li
+                  %a{:href => "user-profile-photos.html"} Photos
+                %li
+                  %a{:href => "user-profile-booking-history.html"} Booking History
+                %li
+                  %a{:href => "user-profile-cards.html"} Cards
+                %li
+                  %a{:href => "user-profile-wishlist.html"} Wishlist
+            %li
+              %a{:href => "blog.html"} Blog
+              %ul
+                %li
+                  %a{:href => "blog.html"} Sidebar Right
+                %li
+                  %a{:href => "blog-sidebar-left.html"} Sidebar Left
+                %li
+                  %a{:href => "blog-full-width.html"} Full Width
+                %li
+                  %a{:href => "blog-post.html"} Post
+                  %ul
+                    %li
+                      %a{:href => "blog-post.html"} Sidebar Right
+                    %li
+                      %a{:href => "blog-post-sidebar-left.html"} Sidebar Left
+                    %li
+                      %a{:href => "blog-post-full-width.html"} Full Width
+            %li
+              %a{:href => "404.html"} 404 page
+            %li
+              %a{:href => "contact-us.html"} Contact Us
+            %li
+              %a{:href => "about.html"} About
+            %li
+              %a{:href => "login-register.html"} Login/Register
+              %ul
+                %li
+                  %a{:href => "login-register.html"} Full Page
+                %li
+                  %a{:href => "login-register-normal.html"} Normal
+            %li
+              %a{:href => "loading.html"} Loading
+            %li
+              %a{:href => "comming-soon.html"} Comming Soon
+            %li
+              %a{:href => "gallery.html"} Gallery
+              %ul
+                %li
+                  %a{:href => "gallery.html"} 4 Columns
+                %li
+                  %a{:href => "gallery-3-col.html"} 3 columns
+                %li
+                  %a{:href => "gallery-2-col.html"} 2 columns
+            %li
+              %a{:href => "page-full-width.html"} Full Width
+            %li
+              %a{:href => "page-sidebar-right.html"} Sidebar Right
+            %li
+              %a{:href => "page-sidebar-left.html"} Sidebar Left
+        %li
+          %a{:href => "feature-typography.html"} Features
+          %ul
+            %li
+              %a{:href => "feature-typography.html"} Typography
+            %li
+              %a{:href => "feature-icons.html"} Icons
+            %li
+              %a{:href => "feature-forms.html"} Forms
+            %li
+              %a{:href => "feature-icon-effects.html"} Icon Effects
+            %li
+              %a{:href => "feature-elements.html"} Elements
+            %li
+              %a{:href => "feature-grid.html"} Grid
+            %li
+              %a{:href => "feature-hovers.html"} Hover effects
+            %li
+              %a{:href => "feature-lightbox.html"} Lightbox
+            %li
+              %a{:href => "feature-media.html"} Media
+        %li
+          %a{:href => "hotels.html"} Hotels
+          %ul
+            %li
+              %a{:href => "hotel-details.html"} Details
+              %ul
+                %li
+                  %a{:href => "hotel-details.html"} Layout 1
+                %li
+                  %a{:href => "hotel-details-2.html"} Layout 2
+                %li
+                  %a{:href => "hotel-details-3.html"} Layout 3
+                %li
+                  %a{:href => "hotel-details-4.html"} Layout 4
+            %li
+              %a{:href => "hotel-payment.html"} Payment
+              %ul
+                %li
+                  %a{:href => "hotel-payment.html"} Registered
+                %li
+                  %a{:href => "hotel-payment-registered-card.html"} Existed Cards
+                %li
+                  %a{:href => "hotel-payment-unregistered.html"} Unregistered
+            %li
+              %a{:href => "hotel-search.html"} Search
+              %ul
+                %li
+                  %a{:href => "hotel-search.html"} Layout 1
+                %li
+                  %a{:href => "hotel-search-2.html"} Layout 2
+            %li
+              %a{:href => "hotels.html"} Results
+              %ul
+                %li
+                  %a{:href => "hotels.html"} Layout 1
+                %li
+                  %a{:href => "hotels-search-results-2.html"} Layout 2
+                %li
+                  %a{:href => "hotels-search-results-3.html"} Layout 3
+                %li
+                  %a{:href => "hotels-search-results-4.html"} Layout 4
+                %li
+                  %a{:href => "hotel-search-results-5.html"} Layout 5
+        %li
+          %a{:href => "flights.html"} Flights
+          %ul
+            %li
+              %a{:href => "flight-payment.html"} Payment
+              %ul
+                %li
+                  %a{:href => "flight-payment.html"} Registered
+                %li
+                  %a{:href => "flight-payment-registered-card.html"} Existed Cards
+                %li
+                  %a{:href => "flight-payment-unregistered.html"} Unregistered
+            %li
+              %a{:href => "flight-search.html"} Search
+              %ul
+                %li
+                  %a{:href => "flight-search.html"} Layout 1
+                %li
+                  %a{:href => "flight-search-2.html"} Layout 2
+            %li
+              %a{:href => "flights.html"} List
+              %ul
+                %li
+                  %a{:href => "flights.html"} Layout 1
+                %li
+                  %a{:href => "flights-search-results-2.html"} Layout 2
+                %li
+                  %a{:href => "flights-search-results-3.html"} Layout 3
+                %li
+                  %a{:href => "flights-search-results-4.html"} Layout 4
+        %li
+          %a{:href => "rentals.html"} Rentals
+          %ul
+            %li
+              %a{:href => "rentals-details.html"} Details
+              %ul
+                %li
+                  %a{:href => "rentals-details.html"} Layout 1
+                %li
+                  %a{:href => "rentals-details-2.html"} Layout 2
+                %li
+                  %a{:href => "rentals-details-3.html"} Layout 3
+            %li
+              %a{:href => "rental-payment.html"} Payment
+              %ul
+                %li
+                  %a{:href => "rental-payment.html"} Registered
+                %li
+                  %a{:href => "rental-payment-registered-card.html"} Existed Cards
+                %li
+                  %a{:href => "rental-payment-unregistered.html"} Unregistered
+            %li
+              %a{:href => "rentals-search.html"} Search
+              %ul
+                %li
+                  %a{:href => "rentals-search.html"} Layout 1
+                %li
+                  %a{:href => "rentals-search-2.html"} Layout 2
+            %li
+              %a{:href => "rentals.html"} Results
+              %ul
+                %li
+                  %a{:href => "rentals.html"} Layout 1
+                %li
+                  %a{:href => "rentals-search-results-2.html"} Layout 2
+                %li
+                  %a{:href => "rentals-search-results-3.html"} Layout 3
+                %li
+                  %a{:href => "rentals-search-results-4.html"} Layout 4
+                %li
+                  %a{:href => "rentals-search-results-5.html"} Layout 5
+        %li
+          %a{:href => "cars.html"} Cars
+          %ul
+            %li
+              %a{:href => "car-details.html"} Details
+            %li
+              %a{:href => "car-payment.html"} Payment
+              %ul
+                %li
+                  %a{:href => "car-payment.html"} Registered
+                %li
+                  %a{:href => "car-payment-registered-card.html"} Existed Cards
+                %li
+                  %a{:href => "car-payment-unregistered.html"} Unregistered
+            %li
+              %a{:href => "car-search.html"} Search
+              %ul
+                %li
+                  %a{:href => "car-search.html"} Layout 1
+                %li
+                  %a{:href => "car-search-2.html"} Layout 2
+            %li
+              %a{:href => "cars.html"} Results
+              %ul
+                %li
+                  %a{:href => "cars.html"} Layout 1
+                %li
+                  %a{:href => "cars-results-2.html"} Layout 2
+                %li
+                  %a{:href => "cars-results-3.html"} Layout 3
+                %li
+                  %a{:href => "cars-results-4.html"} Layout 4
+                %li
+                  %a{:href => "cars-results-5.html"} Layout 5
+        %li
+          %a{:href => "activities.html"} Activities
+          %ul
+            %li
+              %a{:href => "activitiy-details.html"} Details
+              %ul
+                %li
+                  %a{:href => "activitiy-details.html"} Layout 1
+                %li
+                  %a{:href => "activitiy-details-2.html"} Layout 2
+                %li
+                  %a{:href => "activitiy-details-3.html"} Layout 3
+            %li
+              %a{:href => "activity-search.html"} Search
+              %ul
+                %li
+                  %a{:href => "activity-search.html"} Layout 1
+                %li
+                  %a{:href => "activity-search-2.html"} Layout 2
+            %li
+              %a{:href => "activitiy-payment.html"} Payment
+              %ul
+                %li
+                  %a{:href => "activitiy-payment.html"} Registered
+                %li
+                  %a{:href => "activity-payment-registered-card.html"} Existed Cards
+                %li
+                  %a{:href => "activitiy-payment-unregistered.html"} Unregistered
+            %li
+              %a{:href => "activities.html"} Results
+              %ul
+                %li
+                  %a{:href => "activities.html"} Layout 1
+                %li
+                  %a{:href => "activities-search-results-2.html"} Layout 2
+                %li
+                  %a{:href => "activities-search-results-3.html"} Layout 3
+                %li
+                  %a{:href => "activities-search-results-4.html"} Layout 4
+                %li
+                  %a{:href => "activities-search-results-5.html"} Layout 5
