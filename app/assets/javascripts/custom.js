@@ -79,7 +79,6 @@ $('input.date-pick, .input-daterange, .date-pick-inline').datepicker({
 });
 
 
-
 $('input.date-pick, .input-daterange input[name="start"]').datepicker('setDate', 'today');
 $('.input-daterange input[name="end"]').datepicker('setDate', '+7d');
 

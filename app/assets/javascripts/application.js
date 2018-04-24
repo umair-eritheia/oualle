@@ -12,14 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
-//= require jquery
 //= require bootstrap
-//= require modernizr
-//= require slimmenu
+//= require twitter/bootstrap
 //= require bootstrap-datepicker
 //= require bootstrap-timepicker
+//= require modernizr
+//= require slimmenu
 //= require nicescroll
 //= require dropit
 //= require ionrangeslider
@@ -34,4 +33,3 @@
 //= require countdown
 //= require gridrotator
 //= require custom
-//= require_tree .
