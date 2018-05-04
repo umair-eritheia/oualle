@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require bootstrap
-//= require twitter/bootstrap
+// require twitter/bootstrap
 //= require bootstrap-datepicker
 //= require bootstrap-timepicker
 //= require modernizr
@@ -25,11 +25,11 @@
 //= require icheck
 //= require fotorama
 //= require typeahead
-//= require card-payment
+// require card-payment
 //= require magnific
 //= require owl-carousel
-//= require fitvids
-//= require tweet
-//= require countdown
-//= require gridrotator
+// require fitvids
+// require tweet
+// require countdown
+// require gridrotator
 //= require custom
