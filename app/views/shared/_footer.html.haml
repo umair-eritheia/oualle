@@ -2,7 +2,7 @@
   .container
     .row.row-wrap
       .col-md-3
-        %a.logo{:href => "index.html"}
+        = link_to root_path do
           = image_tag "logo-invert.png"
           / %img{:alt => "Image Alternative text", :src => "", :title => "Image Title"}/
         %p.mb20 Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!

@@ -6,28 +6,26 @@
     %meta{:content => "IE=Edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "8cc70acfb49616d39aa9230054e308f44c80f127", :name => "B-verify"}/
-    %meta{:content => "Template, html, premium, themeforest", :name => "keywords"}/
-    %meta{:content => "Traveler - Premium template for travel companies", :name => "description"}/
-    %meta{:content => "Tsoy", :name => "author"}/
+    %meta{:content => "Tripscrave", :name => "description"}/
 
     / %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
-    %title= content_for?(:title) ? yield(:title) : "Oualle"
+    %title= content_for?(:title) ? yield(:title) : "Tripscrave"
     = csrf_meta_tags
+    = #javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    = javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "application", :media => "all", 'data-turbolinks-track' => true
     / For third-generation iPad with high-resolution Retina display:
     / Size should be 144 x 144 pixels
-    = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
-    / For iPhone with high-resolution Retina display:
-    / Size should be 114 x 114 pixels
-    = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
-    / For first- and second-generation iPad:
-    / Size should be 72 x 72 pixels
-    = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
-    / For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:
-    / Size should be 57 x 57 pixels
-    = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
+    / = favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144'
+    / / For iPhone with high-resolution Retina display:
+    / / Size should be 114 x 114 pixels
+    / = favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114'
+    / / For first- and second-generation iPad:
+    / / Size should be 72 x 72 pixels
+    / = favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72'
+    / / For non-Retina iPhone, iPod Touch, and Android 2.1+ devices:
+    / / Size should be 57 x 57 pixels
+    / = favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png'
 
     / For all other devices
     / Size should be 32 x 32 pixels
