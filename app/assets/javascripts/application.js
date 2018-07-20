@@ -10,19 +10,24 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require modernizr
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require slimmenu
 //= require bootstrap-datepicker
 //= require bootstrap-timepicker
-//= require modernizr
-//= require slimmenu
 //= require nicescroll
 //= require dropit
 //= require ionrangeslider
 //= require icheck
 //= require fotorama
 //= require typeahead
+//= require card-payment
 //= require magnific
 //= require owl-carousel
+//= require fitvids
+//= require tweet
+//= require countdown
+//= require gridrotator
 //= require custom

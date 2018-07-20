@@ -65,8 +65,6 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.21)
-    font-awesome-rails (4.7.0.4)
-      railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
@@ -208,7 +206,6 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-  font-awesome-rails
   haml-rails (~> 1.0)
   jbuilder (~> 2.5)
   jquery-rails
@@ -231,4 +228,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
