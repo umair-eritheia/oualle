@@ -10794,8 +10794,8 @@ img.mfp-img {
 .comment .comment-like [class^="fa fa-"] {
   font-weight: normal;
 }
-.comment .comment-reply {
-  [class^="fa fa-"]: 13px;
+.comment .comment-reply [class^="fa fa-"] {
+  font-size: : 13px;
 }
 .comment:hover .comment-like {
   opacity: 1;
