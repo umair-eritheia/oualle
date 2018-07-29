@@ -123,7 +123,7 @@
                 });
 
         this._allow_update = false;
-
+        debugger;
         this.setStartDate(this._o.startDate);
         this.setEndDate(this._o.endDate);
         this.setDaysOfWeekDisabled(this.o.daysOfWeekDisabled);
@@ -1386,12 +1386,12 @@
     };
 
     var defaults = $.fn.datepicker.defaults = {
-        autoclose: false,
+        autoclose: true,
         beforeShowDay: $.noop,
         calendarWeeks: false,
         clearBtn: false,
         daysOfWeekDisabled: [],
-        endDate: Infinity,
+        endDate: '+1y -1d',
         forceParse: true,
         format: 'mm/dd/yyyy',
         keyboardNavigation: true,
@@ -1401,7 +1401,7 @@
         multidateSeparator: ',',
         orientation: "auto",
         rtl: false,
-        startDate: -Infinity,
+        startDate: new Date(),
         startView: 0,
         todayBtn: false,
         todayHighlight: false,

@@ -78,13 +78,12 @@ $(document).ready(function(){
 
 
     $('input.date-pick, .input-daterange, .date-pick-inline').datepicker({
-        todayHighlight: true
+        todayHighlight: true,
+        dateFormat: 'D mm/dd/yyyy'
     });
 
-
-
     $('input.date-pick, .input-daterange input[name="start"]').datepicker('setDate', 'today');
-    $('.input-daterange input[name="end"]').datepicker('setDate', '+7d');
+    $('.input-daterange input[name="end"]').datepicker('setDate', '+1d');
 
     $('input.time-pick').timepicker({
         minuteStep: 15,

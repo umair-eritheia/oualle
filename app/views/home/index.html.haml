@@ -29,86 +29,67 @@
             .tab-content
               #tab-1.tab-pane.fade.in.active
                 %h2 Search and Save on Hotels
-                %form
+                = form_tag search_path, method: 'get', class: 'form' do
                   .form-group.form-group-lg.form-group-icon-left
                     %i.fa.fa-map-marker.input-icon
                     %label Where are you going?
-                    %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+                    = text_field_tag 'destination', '', class: 'typeahead form-control', placeholder: "City, Airport, Point of Interest or U.S. Zip Code"
+
                   .input-daterange{"data-date-format" => "M d, D"}
                     .row
                       .col-md-3
                         .form-group.form-group-lg.form-group-icon-left
                           %i.fa.fa-calendar.input-icon.input-icon-highlight
                           %label Check-in
-                          %input.form-control{:name => "start", :type => "text"}/
+                          = text_field_tag 'start', '', class: 'form-control'
                       .col-md-3
                         .form-group.form-group-lg.form-group-icon-left
                           %i.fa.fa-calendar.input-icon.input-icon-highlight
                           %label Check-out
-                          %input.form-control{:name => "end", :type => "text"}/
+                          = text_field_tag 'end', '', class: 'form-control'
                       .col-md-3
                         .form-group.form-group-lg.form-group-select-plus
                           %label Rooms
                           .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
                             %label.btn.btn-primary.active
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_rooms', '1', true
                               1
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_rooms', '2', false
                               2
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_rooms', '3', false
                               3
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              3+
-                          %select.form-control.hidden
-                            %option 1
-                            %option 2
-                            %option 3
-                            %option{:selected => "selected"} 4
-                            %option 5
-                            %option 6
-                            %option 7
-                            %option 8
-                            %option 9
-                            %option 10
-                            %option 11
-                            %option 12
-                            %option 13
-                            %option 14
+                              = radio_button_tag 'nr_rooms', '4', false
+                              4
+                            %label.btn.btn-primary
+                              = radio_button_tag 'nr_rooms', '5', false
+                              5
+                            %label.btn.btn-primary
+                              = radio_button_tag 'nr_rooms', '', false
+                              5+
+                          = select_tag 'nr_rooms',"<option disabled selected value> -- select rooms -- </option><option>1</option><option>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option>".html_safe, class: 'form-control hidden'
+                          
                       .col-md-3
                         .form-group.form-group-lg.form-group-select-plus
                           %label Guests
                           .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
                             %label.btn.btn-primary.active
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_guests', '1', true
                               1
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_guests', '2', true
                               2
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_guests', '3', true
                               3
                             %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
+                              = radio_button_tag 'nr_guests', '', true
                               3+
-                          %select.form-control.hidden
-                            %option 1
-                            %option 2
-                            %option 3
-                            %option{:selected => "selected"} 4
-                            %option 5
-                            %option 6
-                            %option 7
-                            %option 8
-                            %option 9
-                            %option 10
-                            %option 11
-                            %option 12
-                            %option 13
-                            %option 14
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Hotels
+                          = select_tag 'nr_guests',"<option disabled selected value> -- select guests -- </option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option>".html_safe, class: 'form-control hidden'
+                          
+                  = submit_tag 'Search for Hotels', class: 'btn btn-primary btn-lg'
               / #tab-2.tab-pane.fade
               /   %h2 Search for Cheap Flights
               /   %form
@@ -466,33 +447,8 @@
 / END TOP AREA
 .gap
 .container
-  .row
-    .col-md-10.col-md-offset-1
-      .row.row-wrap{"data-gutter" => "120"}
-        .col-md-6
-          .mb30.thumb
-            %i.fa.fa-dollar.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
-            .thumb-caption
-              %h4.thumb-title Best Price Guarantee
-              %p.thumb-desc Habitant pulvinar nostra himenaeos pulvinar facilisi dui tincidunt luctus condimentum porttitor eros metus quisque scelerisque sollicitudin habitant
-        .col-md-6
-          .mb30.thumb
-            %i.fa.fa-briefcase.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
-            .thumb-caption
-              %h4.thumb-title Combine &amp; Save
-              %p.thumb-desc Hendrerit pretium magna ultricies massa dignissim mi praesent et justo sed platea est cras penatibus fermentum neque
-        .col-md-6
-          .mb30.thumb
-            %i.fa.fa-send.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
-            .thumb-caption
-              %h4.thumb-title Best Destinations
-              %p.thumb-desc Morbi vel nec sed imperdiet accumsan ultricies aliquet suspendisse placerat feugiat tellus platea fermentum eros in commodo
-        .col-md-6
-          .mb30.thumb
-            %i.fa.fa-thumbs-o-up.box-icon-left.round.box-icon-big.box-icon-border.animate-icon-top-to-bottom
-            .thumb-caption
-              %h4.thumb-title Best Travel Agent
-              %p.thumb-desc Quisque porta dolor scelerisque gravida commodo in accumsan ullamcorper laoreet nam litora senectus diam sapien hac turpis
+  = render partial: 'data_gutter'
+
 .container
   = render partial: 'pakistan_destionations'
 
