@@ -4,6 +4,6 @@ class HomeController < ApplicationController
   end
 
   def search
-  	debugger
+
   end
 end
