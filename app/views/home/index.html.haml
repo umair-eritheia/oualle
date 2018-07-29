@@ -10,22 +10,22 @@
                 %a{"data-toggle" => "tab", :href => "#tab-1"}
                   %i.fa.fa-building-o
                   %span Hotels
-              %li
-                %a{"data-toggle" => "tab", :href => "#tab-2"}
-                  %i.fa.fa-plane
-                  %span Flights
-              %li
-                %a{"data-toggle" => "tab", :href => "#tab-3"}
-                  %i.fa.fa-home
-                  %span Rentals
-              %li
-                %a{"data-toggle" => "tab", :href => "#tab-4"}
-                  %i.fa.fa-car
-                  %span Cars
-              %li
-                %a{"data-toggle" => "tab", :href => "#tab-5"}
-                  %i.fa.fa-bolt
-                  %span Activities
+              / %li
+              /   %a{"data-toggle" => "tab", :href => "#tab-2"}
+              /     %i.fa.fa-plane
+              /     %span Flights
+              / %li
+              /   %a{"data-toggle" => "tab", :href => "#tab-3"}
+              /     %i.fa.fa-home
+              /     %span Rentals
+              / %li
+              /   %a{"data-toggle" => "tab", :href => "#tab-4"}
+              /     %i.fa.fa-car
+              /     %span Cars
+              / %li
+              /   %a{"data-toggle" => "tab", :href => "#tab-5"}
+              /     %i.fa.fa-bolt
+              /     %span Activities
             .tab-content
               #tab-1.tab-pane.fade.in.active
                 %h2 Search and Save on Hotels
@@ -109,261 +109,261 @@
                             %option 13
                             %option 14
                   %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Hotels
-              #tab-2.tab-pane.fade
-                %h2 Search for Cheap Flights
-                %form
-                  .tabbable
-                    %ul#flightChooseTab.nav.nav-pills.nav-sm.nav-no-br.mb10
-                      %li.active
-                        %a{"data-toggle" => "tab", :href => "#flight-search-1"} Round Trip
-                      %li
-                        %a{"data-toggle" => "tab", :href => "#flight-search-2"} One Way
-                    .tab-content
-                      #flight-search-1.tab-pane.fade.in.active
-                        .row
-                          .col-md-6
-                            .form-group.form-group-lg.form-group-icon-left
-                              %i.fa.fa-map-marker.input-icon
-                              %label From
-                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                          .col-md-6
-                            .form-group.form-group-lg.form-group-icon-left
-                              %i.fa.fa-map-marker.input-icon
-                              %label To
-                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                        .input-daterange{"data-date-format" => "M d, D"}
-                          .row
-                            .col-md-3
-                              .form-group.form-group-lg.form-group-icon-left
-                                %i.fa.fa-calendar.input-icon.input-icon-highlight
-                                %label Departing
-                                %input.form-control{:name => "start", :type => "text"}/
-                            .col-md-3
-                              .form-group.form-group-lg.form-group-icon-left
-                                %i.fa.fa-calendar.input-icon.input-icon-highlight
-                                %label Returning
-                                %input.form-control{:name => "end", :type => "text"}/
-                            .col-md-6
-                              .form-group.form-group-lg.form-group-select-plus
-                                %label Passngers
-                                .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
-                                  %label.btn.btn-primary.active
-                                    %input{:name => "options", :type => "radio"}>/
-                                    1
-                                  %label.btn.btn-primary
-                                    %input{:name => "options", :type => "radio"}>/
-                                    2
-                                  %label.btn.btn-primary
-                                    %input{:name => "options", :type => "radio"}>/
-                                    3
-                                  %label.btn.btn-primary
-                                    %input{:name => "options", :type => "radio"}>/
-                                    3+
-                                %select.form-control.hidden
-                                  %option 1
-                                  %option 2
-                                  %option 3
-                                  %option{:selected => "selected"} 4
-                                  %option 5
-                                  %option 6
-                                  %option 7
-                                  %option 8
-                                  %option 9
-                                  %option 10
-                                  %option 11
-                                  %option 12
-                                  %option 13
-                                  %option 14
-                      #flight-search-2.tab-pane.fade
-                        .row
-                          .col-md-6
-                            .form-group.form-group-lg.form-group-icon-left
-                              %i.fa.fa-map-marker.input-icon
-                              %label From
-                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                          .col-md-6
-                            .form-group.form-group-lg.form-group-icon-left
-                              %i.fa.fa-map-marker.input-icon
-                              %label To
-                              %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                        .row
-                          .col-md-3
-                            .form-group.form-group-lg.form-group-icon-left
-                              %i.fa.fa-calendar.input-icon.input-icon-highlight
-                              %label Departing
-                              %input.date-pick.form-control{"data-date-format" => "M d, D", :type => "text"}/
-                          .col-md-6
-                            .form-group.form-group-lg.form-group-select-plus
-                              %label Passngers
-                              .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
-                                %label.btn.btn-primary.active
-                                  %input{:name => "options", :type => "radio"}>/
-                                  1
-                                %label.btn.btn-primary
-                                  %input{:name => "options", :type => "radio"}>/
-                                  2
-                                %label.btn.btn-primary
-                                  %input{:name => "options", :type => "radio"}>/
-                                  3
-                                %label.btn.btn-primary
-                                  %input{:name => "options", :type => "radio"}>/
-                                  3+
-                              %select.form-control.hidden
-                                %option 1
-                                %option 2
-                                %option 3
-                                %option{:selected => "selected"} 4
-                                %option 5
-                                %option 6
-                                %option 7
-                                %option 8
-                                %option 9
-                                %option 10
-                                %option 11
-                                %option 12
-                                %option 13
-                                %option 14
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Flights
-              #tab-3.tab-pane.fade
-                %h2 Find Your Perfect Home
-                %form
-                  .form-group.form-group-lg.form-group-icon-left
-                    %i.fa.fa-map-marker.input-icon
-                    %label Where are you going?
-                    %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
-                  .input-daterange{"data-date-format" => "M d, D"}
-                    .row
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label Check-in
-                          %input.form-control{:name => "start", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label Check-out
-                          %input.form-control{:name => "end", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-select-plus
-                          %label Rooms
-                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
-                            %label.btn.btn-primary.active
-                              %input{:name => "options", :type => "radio"}>/
-                              1
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              2
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              3
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              3+
-                          %select.form-control.hidden
-                            %option 1
-                            %option 2
-                            %option 3
-                            %option{:selected => "selected"} 4
-                            %option 5
-                            %option 6
-                            %option 7
-                            %option 8
-                            %option 9
-                            %option 10
-                            %option 11
-                            %option 12
-                            %option 13
-                            %option 14
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-select-plus
-                          %label Guests
-                          .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
-                            %label.btn.btn-primary.active
-                              %input{:name => "options", :type => "radio"}>/
-                              1
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              2
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              3
-                            %label.btn.btn-primary
-                              %input{:name => "options", :type => "radio"}>/
-                              3+
-                          %select.form-control.hidden
-                            %option 1
-                            %option 2
-                            %option 3
-                            %option{:selected => "selected"} 4
-                            %option 5
-                            %option 6
-                            %option 7
-                            %option 8
-                            %option 9
-                            %option 10
-                            %option 11
-                            %option 12
-                            %option 13
-                            %option 14
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Vacation Rentals
-              #tab-4.tab-pane.fade
-                %h2 Search for Cheap Rental Cars
-                %form
-                  .row
-                    .col-md-6
-                      .form-group.form-group-lg.form-group-icon-left
-                        %i.fa.fa-map-marker.input-icon
-                        %label Pick-up Location
-                        %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                    .col-md-6
-                      .form-group.form-group-lg.form-group-icon-left
-                        %i.fa.fa-map-marker.input-icon
-                        %label Drop-off Location
-                        %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
-                  .input-daterange{"data-date-format" => "M d, D"}
-                    .row
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label Pick-up Date
-                          %input.form-control{:name => "start", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-clock-o.input-icon.input-icon-highlight
-                          %label Pick-up Time
-                          %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label Drop-off Date
-                          %input.form-control{:name => "end", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-clock-o.input-icon.input-icon-highlight
-                          %label Drop-off Time
-                          %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Rental Cars
-              #tab-5.tab-pane.fade
-                %h2 Search for Activities
-                %form
-                  .input-daterange{"data-date-format" => "M d, D"}
-                    .row
-                      .col-md-6
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-map-marker.input-icon
-                          %label Where are you going?
-                          %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label From
-                          %input.form-control{:name => "start", :type => "text"}/
-                      .col-md-3
-                        .form-group.form-group-lg.form-group-icon-left
-                          %i.fa.fa-calendar.input-icon.input-icon-highlight
-                          %label To
-                          %input.form-control{:name => "end", :type => "text"}/
-                  %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Activities
+              / #tab-2.tab-pane.fade
+              /   %h2 Search for Cheap Flights
+              /   %form
+              /     .tabbable
+              /       %ul#flightChooseTab.nav.nav-pills.nav-sm.nav-no-br.mb10
+              /         %li.active
+              /           %a{"data-toggle" => "tab", :href => "#flight-search-1"} Round Trip
+              /         %li
+              /           %a{"data-toggle" => "tab", :href => "#flight-search-2"} One Way
+              /       .tab-content
+              /         #flight-search-1.tab-pane.fade.in.active
+              /           .row
+              /             .col-md-6
+              /               .form-group.form-group-lg.form-group-icon-left
+              /                 %i.fa.fa-map-marker.input-icon
+              /                 %label From
+              /                 %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /             .col-md-6
+              /               .form-group.form-group-lg.form-group-icon-left
+              /                 %i.fa.fa-map-marker.input-icon
+              /                 %label To
+              /                 %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /           .input-daterange{"data-date-format" => "M d, D"}
+              /             .row
+              /               .col-md-3
+              /                 .form-group.form-group-lg.form-group-icon-left
+              /                   %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /                   %label Departing
+              /                   %input.form-control{:name => "start", :type => "text"}/
+              /               .col-md-3
+              /                 .form-group.form-group-lg.form-group-icon-left
+              /                   %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /                   %label Returning
+              /                   %input.form-control{:name => "end", :type => "text"}/
+              /               .col-md-6
+              /                 .form-group.form-group-lg.form-group-select-plus
+              /                   %label Passngers
+              /                   .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+              /                     %label.btn.btn-primary.active
+              /                       %input{:name => "options", :type => "radio"}>/
+              /                       1
+              /                     %label.btn.btn-primary
+              /                       %input{:name => "options", :type => "radio"}>/
+              /                       2
+              /                     %label.btn.btn-primary
+              /                       %input{:name => "options", :type => "radio"}>/
+              /                       3
+              /                     %label.btn.btn-primary
+              /                       %input{:name => "options", :type => "radio"}>/
+              /                       3+
+              /                   %select.form-control.hidden
+              /                     %option 1
+              /                     %option 2
+              /                     %option 3
+              /                     %option{:selected => "selected"} 4
+              /                     %option 5
+              /                     %option 6
+              /                     %option 7
+              /                     %option 8
+              /                     %option 9
+              /                     %option 10
+              /                     %option 11
+              /                     %option 12
+              /                     %option 13
+              /                     %option 14
+              /         #flight-search-2.tab-pane.fade
+              /           .row
+              /             .col-md-6
+              /               .form-group.form-group-lg.form-group-icon-left
+              /                 %i.fa.fa-map-marker.input-icon
+              /                 %label From
+              /                 %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /             .col-md-6
+              /               .form-group.form-group-lg.form-group-icon-left
+              /                 %i.fa.fa-map-marker.input-icon
+              /                 %label To
+              /                 %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /           .row
+              /             .col-md-3
+              /               .form-group.form-group-lg.form-group-icon-left
+              /                 %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /                 %label Departing
+              /                 %input.date-pick.form-control{"data-date-format" => "M d, D", :type => "text"}/
+              /             .col-md-6
+              /               .form-group.form-group-lg.form-group-select-plus
+              /                 %label Passngers
+              /                 .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+              /                   %label.btn.btn-primary.active
+              /                     %input{:name => "options", :type => "radio"}>/
+              /                     1
+              /                   %label.btn.btn-primary
+              /                     %input{:name => "options", :type => "radio"}>/
+              /                     2
+              /                   %label.btn.btn-primary
+              /                     %input{:name => "options", :type => "radio"}>/
+              /                     3
+              /                   %label.btn.btn-primary
+              /                     %input{:name => "options", :type => "radio"}>/
+              /                     3+
+              /                 %select.form-control.hidden
+              /                   %option 1
+              /                   %option 2
+              /                   %option 3
+              /                   %option{:selected => "selected"} 4
+              /                   %option 5
+              /                   %option 6
+              /                   %option 7
+              /                   %option 8
+              /                   %option 9
+              /                   %option 10
+              /                   %option 11
+              /                   %option 12
+              /                   %option 13
+              /                   %option 14
+              /     %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Flights
+              / #tab-3.tab-pane.fade
+              /   %h2 Find Your Perfect Home
+              /   %form
+              /     .form-group.form-group-lg.form-group-icon-left
+              /       %i.fa.fa-map-marker.input-icon
+              /       %label Where are you going?
+              /       %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+              /     .input-daterange{"data-date-format" => "M d, D"}
+              /       .row
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label Check-in
+              /             %input.form-control{:name => "start", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label Check-out
+              /             %input.form-control{:name => "end", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-select-plus
+              /             %label Rooms
+              /             .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+              /               %label.btn.btn-primary.active
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 1
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 2
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 3
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 3+
+              /             %select.form-control.hidden
+              /               %option 1
+              /               %option 2
+              /               %option 3
+              /               %option{:selected => "selected"} 4
+              /               %option 5
+              /               %option 6
+              /               %option 7
+              /               %option 8
+              /               %option 9
+              /               %option 10
+              /               %option 11
+              /               %option 12
+              /               %option 13
+              /               %option 14
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-select-plus
+              /             %label Guests
+              /             .btn-group.btn-group-select-num{"data-toggle" => "buttons"}
+              /               %label.btn.btn-primary.active
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 1
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 2
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 3
+              /               %label.btn.btn-primary
+              /                 %input{:name => "options", :type => "radio"}>/
+              /                 3+
+              /             %select.form-control.hidden
+              /               %option 1
+              /               %option 2
+              /               %option 3
+              /               %option{:selected => "selected"} 4
+              /               %option 5
+              /               %option 6
+              /               %option 7
+              /               %option 8
+              /               %option 9
+              /               %option 10
+              /               %option 11
+              /               %option 12
+              /               %option 13
+              /               %option 14
+              /     %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Vacation Rentals
+              / #tab-4.tab-pane.fade
+              /   %h2 Search for Cheap Rental Cars
+              /   %form
+              /     .row
+              /       .col-md-6
+              /         .form-group.form-group-lg.form-group-icon-left
+              /           %i.fa.fa-map-marker.input-icon
+              /           %label Pick-up Location
+              /           %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /       .col-md-6
+              /         .form-group.form-group-lg.form-group-icon-left
+              /           %i.fa.fa-map-marker.input-icon
+              /           %label Drop-off Location
+              /           %input.typeahead.form-control{:placeholder => "City, Airport, U.S. Zip", :type => "text"}/
+              /     .input-daterange{"data-date-format" => "M d, D"}
+              /       .row
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label Pick-up Date
+              /             %input.form-control{:name => "start", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-clock-o.input-icon.input-icon-highlight
+              /             %label Pick-up Time
+              /             %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label Drop-off Date
+              /             %input.form-control{:name => "end", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-clock-o.input-icon.input-icon-highlight
+              /             %label Drop-off Time
+              /             %input.time-pick.form-control{:type => "text", :value => "12:00 AM"}/
+              /     %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Rental Cars
+              / #tab-5.tab-pane.fade
+              /   %h2 Search for Activities
+              /   %form
+              /     .input-daterange{"data-date-format" => "M d, D"}
+              /       .row
+              /         .col-md-6
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-map-marker.input-icon
+              /             %label Where are you going?
+              /             %input.typeahead.form-control{:placeholder => "City, Airport, Point of Interest or U.S. Zip Code", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label From
+              /             %input.form-control{:name => "start", :type => "text"}/
+              /         .col-md-3
+              /           .form-group.form-group-lg.form-group-icon-left
+              /             %i.fa.fa-calendar.input-icon.input-icon-highlight
+              /             %label To
+              /             %input.form-control{:name => "end", :type => "text"}/
+              /     %button.btn.btn-primary.btn-lg{:type => "submit"} Search for Activities
     #owl-carousel-slider.owl-carousel.owl-slider.owl-carousel-area.visible-lg
       .bg-holder.full
         .bg-mask
