@@ -81,8 +81,8 @@ $(document).ready(function(){
         todayHighlight: true
     });
 
-    $('input.date-pick, .input-daterange input[name="start"]').datepicker('setDate', 'today');
-    $('.input-daterange input[name="end"]').datepicker('setDate', '+2d');
+    $('input.date-pick, .input-daterange input[name="arrivalDate"]').datepicker('setDate', 'today');
+    $('.input-daterange input[name="departureDate"]').datepicker('setDate', '+2d');
 
     $('input.time-pick').timepicker({
         minuteStep: 15,

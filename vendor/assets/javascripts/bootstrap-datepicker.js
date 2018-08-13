@@ -123,7 +123,6 @@
                 });
 
         this._allow_update = false;
-        debugger;
         this.setStartDate(this._o.startDate);
         this.setEndDate(this._o.endDate);
         this.setDaysOfWeekDisabled(this.o.daysOfWeekDisabled);
@@ -1366,7 +1365,7 @@
                     opts = $.extend({}, defaults, locopts, elopts, options);
                 if ($this.is('.input-daterange') || opts.inputs) {
                     var ropts = {
-                        inputs: opts.inputs || $this.find('input[name="start"], input[name="end"]').toArray()
+                        inputs: opts.inputs || $this.find('input[name="arrivalDate"], input[name="departureDate"]').toArray()
                     };
                     $this.data('datepicker', (data = new DateRangePicker(this, $.extend(opts, ropts))));
                 } else {

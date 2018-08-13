@@ -33,7 +33,7 @@
                   .form-group.form-group-lg.form-group-icon-left
                     %i.fa.fa-map-marker.input-icon
                     %label Where are you going?
-                    = text_field_tag 'destination', '', class: 'typeahead form-control', placeholder: "City, Airport, Point of Interest or U.S. Zip Code"
+                    = text_field_tag 'destinationString', '', class: 'typeahead form-control', placeholder: "City, Airport, Point of Interest or U.S. Zip Code"
 
                   .input-daterange{"data-date-format" => "D, M d yyyy"}
                     .row
@@ -41,12 +41,12 @@
                         .form-group.form-group-lg.form-group-icon-left
                           %i.fa.fa-calendar.input-icon.input-icon-highlight
                           %label Check-in
-                          = text_field_tag 'start', '', class: 'form-control'
+                          = text_field_tag 'arrivalDate', '', class: 'form-control'
                       .col-md-3
                         .form-group.form-group-lg.form-group-icon-left
                           %i.fa.fa-calendar.input-icon.input-icon-highlight
                           %label Check-out
-                          = text_field_tag 'end', '', class: 'form-control'
+                          = text_field_tag 'departureDate', '', class: 'form-control'
                       .col-md-3
                         .form-group.form-group-lg.form-group-select-plus
                           %label Rooms

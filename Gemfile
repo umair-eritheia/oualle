@@ -20,6 +20,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'puma', '~> 3.0'
 gem 'pg_search'
+gem 'countries'
+gem 'algoliasearch'
+gem 'cloudsearchable'
+gem "figaro"
 group :development, :test do
   gem 'byebug', platform: :mri
 end
