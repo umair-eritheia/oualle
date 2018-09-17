@@ -4,7 +4,6 @@
       .col-md-3
         = link_to root_path do
           = image_tag "logo-invert.png"
-          / %img{:alt => "Image Alternative text", :src => "", :title => "Image Title"}/
         %p.mb20 Booking, reviews and advices on hotels, resorts and lots more!
         %ul.list.list-horizontal.list-space
           %li
@@ -28,15 +27,12 @@
       .col-md-2
         %ul.list.list-footer
           %li
-            %a{:href => "#"} About US
+            = link_to 'About US', about_us_path
           %li
-            %a{:href => "#"} Travel News
+            = link_to 'Privacy Policy', privacy_policy_path
           %li
-            %a{:href => "#"} Privacy Policy
-          %li
-            %a{:href => "#"} Terms of Use
-          %li
-            %a{:href => "#"} Feedback
+            = link_to 'Terms of Use', terms_of_service_path
+        
       .col-md-4
         %h4 Have Questions?
         %h4.text-color +1-202-555-0173
