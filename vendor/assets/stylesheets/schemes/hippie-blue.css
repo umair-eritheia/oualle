@@ -19,10 +19,10 @@ a,
 .user-profile-statictics > li h5,
 .form-group.form-group-focus .input-icon.input-icon-hightlight,
 .last-minute-rating {
-  color: #4f96b6;
+  color: #016699;
 }
 .text-color {
-  color: #4f96b6 !important;
+  color: #016699 !important;
 }
 a:hover {
   color: #3d7994;
@@ -104,7 +104,7 @@ ul.slimmenu li:hover > a,
 .booking-item-raiting-list > li > div.booking-item-raiting-list-bar > div,
 .booking-item-raiting-summary-list > li > div.booking-item-raiting-list-bar > div,
 ::selection {
-  background-color: #4f96b6;
+  background-color: #016699;
 }
 header#main-header,
 .booking-item:hover,
@@ -123,7 +123,7 @@ header#main-header,
 .fotorama__thumb-border,
 .top-user-area .top-user-area-list > li.top-user-area-avatar > a:hover > img,
 footer#main-footer .form-control:focus {
-  border-color: #4f96b6;
+  border-color: #016699;
 }
 .top-user-area .top-user-area-list > li > a:hover {
   color: #72abc5;
@@ -168,7 +168,7 @@ footer#main-footer .form-control:focus {
   color: #61a1bd;
 }
 .owl-controls .owl-buttons div:hover {
-  box-shadow: 0 0 0 1px #4f96b6;
+  box-shadow: 0 0 0 1px #016699;
 }
 .card-thumb .card-thumb-actions > li > a:hover {
   box-shadow: 0 0 0 1px #41809d;
@@ -184,11 +184,11 @@ footer#main-footer .form-control:focus {
 .datepicker table tr td.today:hover:before,
 .datepicker table tr td.today.disabled:before,
 .datepicker table tr td.today.disabled:hover:before {
-  border-color: transparent transparent #4f96b6 transparent;
+  border-color: transparent transparent #016699 transparent;
 }
 .testimonial-color .testimonial-inner:after,
 .testimonial-color .testimonial-inner:before {
-  border-color: #4f96b6 transparent transparent transparent;
+  border-color: #016699 transparent transparent transparent;
 }
 .irs-slider {
   background: #3d7994;
@@ -202,7 +202,7 @@ footer#main-footer .form-control:focus {
 .box-icon,
 [class^="box-icon-"],
 [class*=" box-icon-"] {
-  background: #4f96b6;
+  background: #016699;
   color: #fff;
 }
 .box-icon:hover,
@@ -225,10 +225,10 @@ footer#main-footer .form-control:focus {
 }
 .box-icon-white {
   background: #fff;
-  color: #4f96b6;
+  color: #016699;
 }
 .box-icon-white:hover {
-  color: #4f96b6;
+  color: #016699;
   background: #e6e6e6;
 }
 .box-icon-info {
@@ -262,7 +262,7 @@ footer#main-footer .form-control:focus {
   background: #8d543a;
 }
 .box-icon-to-normal:hover {
-  background: #4f96b6;
+  background: #016699;
 }
 .box-icon-to-black:hover {
   background: #333;
@@ -272,7 +272,7 @@ footer#main-footer .form-control:focus {
 }
 .box-icon-to-white:hover {
   background: #fff;
-  color: #4f96b6;
+  color: #016699;
 }
 .box-icon-to-info:hover {
   background: #2f96b4;
@@ -293,13 +293,13 @@ footer#main-footer .form-control:focus {
 [class^="box-icon-border"],
 [class*=" box-icon-border"] {
   background: none;
-  border: 1px solid #4f96b6;
-  color: #4f96b6;
+  border: 1px solid #016699;
+  color: #016699;
 }
 .box-icon-border:hover,
 [class^="box-icon-border"]:hover,
 [class*=" box-icon-border"]:hover {
-  background: #4f96b6;
+  background: #016699;
   color: #fff !important;
 }
 .box-icon-border.box-icon-black,
@@ -351,7 +351,7 @@ footer#main-footer .form-control:focus {
 .box-icon-border.box-icon-to-white:hover:hover,
 [class^="box-icon-border"].box-icon-to-white:hover:hover,
 [class*=" box-icon-border"].box-icon-to-white:hover:hover {
-  color: #4f96b6;
+  color: #016699;
   background: #fff;
 }
 .box-icon-border.box-icon-info,
@@ -442,15 +442,15 @@ footer#main-footer .form-control:focus {
 .box-icon-border.box-icon-to-normal:hover,
 [class^="box-icon-border"].box-icon-to-normal:hover,
 [class*=" box-icon-border"].box-icon-to-normal:hover {
-  border-color: #4f96b6;
-  background: #4f96b6;
+  border-color: #016699;
+  background: #016699;
 }
 .box-icon-border-dashed {
   border-style: dashed;
 }
 .animate-icon-border-rise:after,
 .animate-icon-border-rise-alt:after {
-  box-shadow: 0 0 0 2px #4f96b6;
+  box-shadow: 0 0 0 2px #016699;
 }
 .animate-icon-border-rise.box-icon-black:after,
 .animate-icon-border-rise-alt.box-icon-black:after,
@@ -496,7 +496,7 @@ footer#main-footer .form-control:focus {
 }
 .animate-icon-border-rise.box-icon-to-normal:after:hover,
 .animate-icon-border-rise-alt.box-icon-to-normal:after:hover {
-  box-shadow: 0 0 0 2px #4f96b6;
+  box-shadow: 0 0 0 2px #016699;
 }
 .animate-icon-border-rise.round:after,
 .animate-icon-border-rise-alt.round:after {
@@ -505,14 +505,14 @@ footer#main-footer .form-control:focus {
 .animate-icon-border-fadeout {
   color: #fff;
   background: none;
-  border: 2px solid #4f96b6;
+  border: 2px solid #016699;
 }
 .animate-icon-border-fadeout:after {
   opacity: 1;
-  background: #4f96b6;
+  background: #016699;
 }
 .animate-icon-border-fadeout:hover {
-  color: #4f96b6;
+  color: #016699;
   background: none;
 }
 .animate-icon-border-fadeout:hover:after {
@@ -604,24 +604,24 @@ footer#main-footer .form-control:focus {
   color: #b06949;
 }
 .animate-icon-border-fadeout.box-icon-to-normal {
-  border-color: #4f96b6;
+  border-color: #016699;
 }
 .animate-icon-border-fadeout.box-icon-to-normal:after {
-  background: #4f96b6;
+  background: #016699;
 }
 .animate-icon-border-fadeout.box-icon-to-normal:hover {
-  color: #4f96b6;
+  color: #016699;
 }
 .animate-icon-border-fadein {
-  color: #4f96b6;
+  color: #016699;
   background: none;
-  border: 2px solid #4f96b6;
+  border: 2px solid #016699;
 }
 .animate-icon-border-fadein:hover {
   color: #fff !important;
 }
 .animate-icon-border-fadein:hover:after {
-  background: #4f96b6;
+  background: #016699;
 }
 .animate-icon-border-fadein.box-icon-black,
 .animate-icon-border-fadein.box-icon-to-black:hover {
@@ -687,9 +687,9 @@ footer#main-footer .form-control:focus {
   background: #b06949;
 }
 .animate-icon-border-fadein.box-icon-to-normal:hover {
-  color: #4f96b6;
-  border-color: #4f96b6;
+  color: #016699;
+  border-color: #016699;
 }
 .animate-icon-border-fadein.box-icon-to-normal:hover:hover:after {
-  background: #4f96b6;
+  background: #016699;
 }
