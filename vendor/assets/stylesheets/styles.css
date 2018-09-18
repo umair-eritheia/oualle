@@ -21,7 +21,7 @@ h5,
 .text-hero {
   font-family: 'Roboto', arial, helvetica, sans-serif;
   margin-top: 0;
-  font-weight: 300;
+  font-weight: bold;
   color: #565656;
   line-height: 1.3em;
 }
@@ -50,22 +50,6 @@ h5 small,
 .text-hero small {
   font-size: 50%;
   font-weight: inherit;
-}
-h1 {
-  font-size: 51.98102000000001px;
-}
-h2 {
-  font-size: 39.985400000000006px;
-}
-h3 {
-  font-size: 30.758000000000003px;
-}
-h4 {
-  font-size: 23.66px;
-}
-h5 {
-  font-size: 18.2px;
-  font-weight: 300;
 }
 * > small,
 small {
@@ -1660,7 +1644,7 @@ ul.slimmenu.slimmenu-collapsed li .slimmenu-sub-collapser > i {
   line-height: 1em;
 }
 h5.thumb-title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
 }
 .thumb-desc {
@@ -1991,10 +1975,6 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  filter: blur(2px);
   z-index: 0;
 }
 .bg-holder > .bg-blur:before {

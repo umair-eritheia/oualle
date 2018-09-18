@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/terms_of_service', to: 'home#terms_of_service'
   get '/privacy_policy', to: 'home#privacy_policy'
   get '/about_us', to: 'home#about_us'
+  get '/contact_us', to: 'home#contact_us'
   scope module: 'hotels' do
 	  resources :base
 	end

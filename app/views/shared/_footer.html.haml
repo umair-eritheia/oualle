@@ -2,40 +2,27 @@
   .container
     .row.row-wrap
       .col-md-3
-        = link_to root_path do
+        = link_to root_path, class:'footer-logo' do
           = image_tag "logo-invert.png"
         %p.mb20 Booking, reviews and advices on hotels, resorts and lots more!
         %ul.list.list-horizontal.list-space
           %li
             %a.fa.fa-facebook.box-icon-normal.round.animate-icon-bottom-to-top{:href => "#"}
           %li
-            %a.fa.fa-twitter.box-icon-normal.round.animate-icon-bottom-to-top{:href => "#"}
-          %li
-            %a.fa.fa-google-plus.box-icon-normal.round.animate-icon-bottom-to-top{:href => "#"}
+            = link_to '', "https://www.twitter.com/oualle_travel", class: 'fa fa-twitter box-icon-normal round animate-icon-bottom-to-top', target: '_blank'
           %li
             %a.fa.fa-linkedin.box-icon-normal.round.animate-icon-bottom-to-top{:href => "#"}
           %li
-            %a.fa.fa-pinterest.box-icon-normal.round.animate-icon-bottom-to-top{:href => "#"}
-      .col-md-3
-        / %h4 Newsletter
-        / %form
-        /   %label Enter your E-mail Address
-        /   %input.form-control{:type => "text"}/
-        /   %p.mt5
-        /     %small *We Never Send Spam
-        /   %input.btn.btn-primary{:type => "submit", :value => "Subscribe"}/
+            = link_to '', "https://www.pinterest.com/tripscrave4895", class: 'fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top', target: '_blank'
+      .col-md-7
       .col-md-2
         %ul.list.list-footer
           %li
             = link_to 'About US', about_us_path
           %li
+            = link_to 'Contact US', contact_us_path
+          %li
             = link_to 'Privacy Policy', privacy_policy_path
           %li
             = link_to 'Terms of Use', terms_of_service_path
         
-      .col-md-4
-        %h4 Have Questions?
-        %h4.text-color +1-202-555-0173
-        %h4
-          %a.text-color{:href => "#"} development@oualle.com
-        %p 24/7 Dedicated Customer Support
