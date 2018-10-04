@@ -4,7 +4,12 @@
 		%title= content_for?(:title) ? yield(:title) : "Tripscrave"
 		%meta{:content => "text/html;charset=utf-8", "http-equiv" => "Content-Type"}/
 		%meta{:content => "Tripscrave - Premium template for travel companies", :name => "description"}/
+		%meta{:content => "Hotel Bookings,  Cheap Hotels, Cheap rooms, Best hotel prices, Cheapest hotel prices, hotel rates, best hotel rates, room rates, best room rates", :name => "keywords"}/
+		 
 		%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+		:javascript
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KNLC9NR');
+
 		/ GOOGLE FONTS
 		%link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700", :rel => "stylesheet", :type => "text/css"}/
 		%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600", :rel => "stylesheet", :type => "text/css"}/
@@ -17,3 +22,5 @@
 			= render partial: 'shared/header'
 			= yield
 			= render partial: 'shared/footer'
+		%noscript
+			%iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-KNLC9NR", :style => "display:none;visibility:hidden", :width => "0"}
