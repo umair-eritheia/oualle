@@ -3,11 +3,11 @@
 	%head
 		%script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-127040298-1"}
 		:javascript
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		  gtag('config', 'UA-127040298-1');
+			gtag('config', 'UA-127040298-1');
 
 		%title= content_for?(:title) ? yield(:title) : "Tripscrave"
 		%meta{:content => "text/html;charset=utf-8", "http-equiv" => "Content-Type"}/
