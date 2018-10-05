@@ -17,7 +17,7 @@
 //= require slimmenu
 //= require bootstrap-datepicker
 //= require bootstrap-timepicker
-//= require nicescroll
+// require nicescroll
 //= require dropit
 //= require ionrangeslider
 //= require icheck

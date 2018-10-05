@@ -818,7 +818,7 @@
 
                 var rail = $(document.createElement('div'));
                 rail.attr('id', self.id);
-                rail.addClass('nicescroll-rails');
+                // rail.addClass('nicescroll-rails');
 
                 var v, a, kp = ["left", "right"]; //"top","bottom"
                 for (var n in kp) {
@@ -897,26 +897,26 @@
                     cursor.wborder = parseFloat(cursor.outerWidth() - cursor.innerWidth());
                     self.cursorh = cursor;
 
-                    var railh = $(document.createElement('div'));
-                    railh.attr('id', self.id + '-hr');
-                    railh.addClass('nicescroll-rails');
-                    railh.height = Math.max(parseFloat(self.opt.cursorwidth), cursor.outerHeight());
-                    railh.css({
-                        height: railh.height + "px",
-                        'zIndex': self.zindex,
-                        "background": self.opt.background
-                    });
+                    // var railh = $(document.createElement('div'));
+                    // railh.attr('id', self.id + '-hr');
+                    // // railh.addClass('nicescroll-rails');
+                    // railh.height = Math.max(parseFloat(self.opt.cursorwidth), cursor.outerHeight());
+                    // railh.css({
+                    //     height: railh.height + "px",
+                    //     'zIndex': self.zindex,
+                    //     "background": self.opt.background
+                    // });
 
-                    railh.append(cursor);
+                    // railh.append(cursor);
 
-                    railh.visibility = true;
-                    railh.scrollable = true;
+                    // railh.visibility = true;
+                    // railh.scrollable = true;
 
-                    railh.align = (self.opt.railvalign == "top") ? 0 : 1;
+                    // railh.align = (self.opt.railvalign == "top") ? 0 : 1;
 
-                    self.railh = railh;
+                    // self.railh = railh;
 
-                    self.railh.drag = false;
+                    // self.railh.drag = false;
 
                 }
 
