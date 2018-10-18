@@ -24,6 +24,9 @@ gem 'countries'
 gem 'algoliasearch'
 gem 'cloudsearchable'
 gem "figaro"
+gem 'sitemap_generator'
+gem 'forecast_io'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
